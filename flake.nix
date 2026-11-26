@@ -46,6 +46,7 @@
                 -o "$gen/${meta.name}.lidl"
               logos-lidl-gen "$gen/${meta.name}.lidl" --provider --no-trait \
                 --dep libp2p_module=${libp2pLidl} \
+                --dep rln_lez_module="$root/rust-lib/deps/rln_lez_module.lidl" \
                 --protocol-version ${protocolVersion} \
                 -o "$gen/provider_gen.rs"
               echo "staging the SDK source at logos-rust-sdk-src/ ..."
