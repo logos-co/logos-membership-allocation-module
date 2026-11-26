@@ -20,8 +20,7 @@ on the trait in `rust-lib/src/lib.rs`.
 ## Dependencies
 
 - `libp2p_module` (declared; loaded first by the host).
-- `rln_lez_module`, the registry module. It is not declared: the host must load it, and a missing
-  one fails the first registration, not `serve`.
+- `rln_lez_module`, the registry module (declared; loaded first by the host).
 - Shared crates, pinned by commit: `membership_allocation_action`, `paymaster_service`,
   `paymaster_lp`, `paymaster_wire`, `auth_vector` and `auth_vectors` from
   `logos-membership-allocation-crates`.

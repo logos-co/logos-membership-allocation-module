@@ -7,13 +7,18 @@
   "interface": "cdylib",
   "category": "blockchain",
   "main": "membership_allocation_module_plugin",
-  "dependencies": ["libp2p_module"],
+  "dependencies": ["libp2p_module", "rln_lez_module"],
   "include": [],
   "capabilities": [],
   "codegen": {
     "rust": {
       "crate": "rust-lib",
       "trait": "MembershipAllocationModule"
+    }
+  },
+  "dependency_overrides": {
+    "rln_lez_module": {
+      "file": "rust-lib/deps/rln_lez_module.lidl"
     }
   },
   "nix": {

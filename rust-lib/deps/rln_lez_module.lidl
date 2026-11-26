@@ -1,0 +1,8 @@
+; The rln_lez_module methods server.rs calls, from rust-lib/rln_lez_module.lidl
+; in logos-rln-lez-module.
+module rln_lez_module {
+  version "6.1.1"
+
+  method register_member(config_account_id: tstr, payer_account_id: tstr, id_commitment_hex: tstr, rate_limit: int) -> tstr
+  method get_membership(config_account_id: tstr, id_commitment_hex: tstr) -> tstr
+}
